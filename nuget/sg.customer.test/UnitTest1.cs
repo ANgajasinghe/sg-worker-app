@@ -10,8 +10,10 @@ namespace sg.customer.test
         {
             try
             {
-                var dataAccess = new DataAceess();
-                var res = dataAccess.GetCustomer(0, 10, "server=localhost;database=sakila;uid=root");
+                var dataAccess = new DataAccess();
+                var res = dataAccess.GetCustomer(100, 
+                    "", 
+                    "");
 
                 Assert.NotNull(res);
                 Assert.True(res.Any());
