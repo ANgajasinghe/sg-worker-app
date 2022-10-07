@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <PackageId>sgcustomer</PackageId>
+    <Authors>ANgajasinghye</Authors>
+    <Product>sg-worker</Product>
+    <PackageProjectUrl>https://github.com/ANgajasinghe/sg-worker-app</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ANgajasinghe/sg-worker-app</RepositoryUrl>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.123" />
+    <PackageReference Include="MySql.Data" Version="8.0.30" />
+  </ItemGroup>
+
+</Project>
