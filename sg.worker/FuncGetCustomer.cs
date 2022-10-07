@@ -41,7 +41,7 @@ namespace sg.worker
                 DataAccess dataAceess = new DataAccess();
                 var data = dataAceess.GetCustomer(50, _configuration.GetConnectionString("MYSQL_CONNECTION_STR"), _configuration.GetConnectionString("COSMOS_CONNECTION_STR"));
                
-                return new OkObjectResult(new {});
+                return new OkObjectResult(data);
             }
             catch (System.Exception ex)
             {
