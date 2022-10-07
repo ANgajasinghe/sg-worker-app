@@ -36,13 +36,11 @@ namespace sg.worker
             {
 
 
-                // _logger.LogInformation("C# HTTP trigger function processed a request.");
-                //
-                //
-                // DataAceess dataAcess = new DataAceess();
-                // var data = dataAcess.GetCustomer(int.Parse(lastId), int.Parse(pageSize), configuration.GetConnectionString("default"));
-                //
-                //
+                _logger.LogInformation("C# HTTP trigger function processed a request.");
+
+                DataAccess dataAceess = new DataAccess();
+                var data = dataAceess.GetCustomer(50, _configuration.GetConnectionString("MYSQL_CONNECTION_STR"), _configuration.GetConnectionString("COSMOS_CONNECTION_STR"));
+               
                 return new OkObjectResult(new {});
             }
             catch (System.Exception ex)

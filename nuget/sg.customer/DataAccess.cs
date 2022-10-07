@@ -46,7 +46,7 @@ namespace sg.customer
         private async Task<IdCollection> UpdateLastId(IdCollection idCollection,  string? connectionString = null)
         {
             var collection = GetIdCollection(GetCosmosDbConnectionString(connectionString));
-            await collection.InsertOneAsync(idCollection);
+            await collection.ReplaceOneAsync(x=>x.Key == MongoKey, idCollection);
             return idCollection;
         }
         private string GetCosmosDbConnectionString(string? connectionString = null)

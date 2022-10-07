@@ -9,9 +9,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sg.customer", "nuget\sg.cus
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sg.customer.test", "nuget\sg.customer.test\sg.customer.test.csproj", "{15342356-D76A-49C8-A923-790818424894}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sg.worker", "sg.worker\sg.worker.csproj", "{3B3A586E-A749-4830-8292-44CE8D8A75B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sg.worker", "sg.worker\sg.worker.csproj", "{3B3A586E-A749-4830-8292-44CE8D8A75B0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "terraform", "terraform", "{AD6CBA2A-F343-4BF3-BA43-361B4DEA596E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SP", "SP", "{F456E1E2-30ED-462C-B7CF-BB1AB97D1290}"
+	ProjectSection(SolutionItems) = preProject
+		GetCustomerSp.sql = GetCustomerSp.sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
