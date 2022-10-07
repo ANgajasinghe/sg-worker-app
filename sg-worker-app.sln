@@ -11,6 +11,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sg.customer.test", "nuget\s
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sg.worker", "sg.worker\sg.worker.csproj", "{3B3A586E-A749-4830-8292-44CE8D8A75B0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "terraform", "terraform", "{4865B1F5-E2D0-43FE-8546-511286F047E6}"
+	ProjectSection(SolutionItems) = preProject
+		terraform\main.tf = terraform\main.tf
+		terraform\variables.tf = terraform\variables.tf
+		terraform\outputs.tf = terraform\outputs.tf
+		terraform\terraform.tfvars = terraform\terraform.tfvars
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
